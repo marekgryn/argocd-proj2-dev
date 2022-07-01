@@ -2,4 +2,4 @@
 demo:
   replicaCount: 3
   image:
-    tag: "1.23"
+    tag: "1.23.0"
