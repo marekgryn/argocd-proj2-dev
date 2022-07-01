@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app1-ms4-canary
-        image: yeasy/simple-web
+        image: yeasy/simple-web:latest
 #        image: mmumshad/simple-webapp
         imagePullPolicy: Always
         ports:
@@ -30,11 +30,5 @@ spec:
     canary:
 #      canaryService: app1-ms4-canary-service-preview
       steps:
-#      - setWeight: 20
-#      - pause: {}
-#      - setWeight: 40
-#      - pause: {duration: 10}
-#      - setWeight: 60
-#      - pause: {duration: 10}
-      - setWeight: 80
-      - pause: {duration: 10}
+      - setWeight: 0
+      - pause: {}
