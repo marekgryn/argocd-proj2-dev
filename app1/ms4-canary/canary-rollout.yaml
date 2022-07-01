@@ -3,7 +3,7 @@ kind: Rollout
 metadata:
   name: app1-ms4-canary
 spec:
-  replicas: 4
+  replicas: 5
   revisionHistoryLimit: 1
   selector:
     matchLabels:
