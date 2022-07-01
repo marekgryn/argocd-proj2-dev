@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app1-ms4-canary
-        image: nginx:1.23x
+        image: argoproj/rollouts-demo:blue
         imagePullPolicy: Always
         ports:
         - name: http
