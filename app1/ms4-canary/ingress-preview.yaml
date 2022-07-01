@@ -12,7 +12,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /app4/main
+      - path: /app4/preview
         pathType: Prefix
         backend:
           service:
