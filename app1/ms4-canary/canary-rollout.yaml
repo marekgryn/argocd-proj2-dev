@@ -3,7 +3,7 @@ kind: Rollout
 metadata:
   name: app1-ms4-canary
 spec:
-  replicas: 5
+  replicas: 1
   revisionHistoryLimit: 1
   selector:
     matchLabels:
@@ -19,7 +19,7 @@ spec:
         imagePullPolicy: Always
         ports:
         - name: http
-          containerPort: 8080
+          containerPort: 80
           protocol: TCP
         resources:
           requests:
@@ -29,11 +29,11 @@ spec:
     canary:
 #      canaryService: app1-ms4-canary-service-preview
       steps:
-      - setWeight: 20
-      - pause: {}
-      - setWeight: 40
-      - pause: {duration: 10}
-      - setWeight: 60
-      - pause: {duration: 10}
+#      - setWeight: 20
+#      - pause: {}
+#      - setWeight: 40
+#      - pause: {duration: 10}
+#      - setWeight: 60
+#      - pause: {duration: 10}
       - setWeight: 80
       - pause: {duration: 10}
