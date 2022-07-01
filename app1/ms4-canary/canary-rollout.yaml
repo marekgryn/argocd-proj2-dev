@@ -27,7 +27,7 @@ spec:
             cpu: 150m
   strategy:
     canary:
-      maxSurge: "25%"
+#      maxSurge: "25%"
       canaryService: app1-ms4-canary-preview
       steps:
       - setWeight: 0
