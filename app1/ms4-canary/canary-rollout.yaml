@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app1-ms4-canary
-        image: httpd
+        image: yeasy/simple-web
         imagePullPolicy: Always
         ports:
         - name: http
