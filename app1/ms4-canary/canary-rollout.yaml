@@ -27,7 +27,7 @@ spec:
             cpu: 150m
   strategy:
     canary:
-#      canaryService: app1-ms4-canary-service-preview
+      canaryService: app1-ms4-canary-preview
       steps:
       - setWeight: 50
       - pause: {}
