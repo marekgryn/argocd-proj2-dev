@@ -6,13 +6,12 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
   - http:
       paths:
-      - path: /app4/preview
+      - path: /
         pathType: Prefix
         backend:
           service:
@@ -20,4 +19,3 @@ spec:
             port:
               number: 80
     host: canary-deployment-preview.argo.cdworkstreamsandbox.babylontech.co.uk
-#    host: k8s-ingressn-ingressn-2fc4aa06ce-27daa62d24681377.elb.eu-west-2.amazonaws.com
