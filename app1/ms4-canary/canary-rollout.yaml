@@ -29,5 +29,8 @@ spec:
     canary:
       canaryService: app1-ms4-canary-preview
       steps:
+      - setCanaryScale:
+          weight: 10
+          matchTrafficWeight: true
       - setWeight: 90
       - pause: {}
