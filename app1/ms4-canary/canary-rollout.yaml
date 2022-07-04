@@ -31,6 +31,5 @@ spec:
       steps:
       - setCanaryScale:
           weight: 10
-          matchTrafficWeight: true
       - setWeight: 90
       - pause: {}
