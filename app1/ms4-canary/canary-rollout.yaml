@@ -31,4 +31,4 @@ spec:
       canaryService: app1-ms4-canary-preview
       steps:
       - setWeight: 10
-      - pause: { duration: 10 }
+      - pause: { duration: 40 }
