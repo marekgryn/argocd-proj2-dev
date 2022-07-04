@@ -30,7 +30,5 @@ spec:
 #      maxSurge: "25%"
       canaryService: app1-ms4-canary-preview
       steps:
-      - setCanaryScale:
-          replicas: 1
       - setWeight: 10
       - pause: {}
