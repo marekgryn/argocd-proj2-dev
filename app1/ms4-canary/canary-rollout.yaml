@@ -34,6 +34,6 @@ spec:
           stableIngress: app1-ms4-canary
       steps:
       - setCanaryScale:
-          weight: 10
+          weight: 30
       - setWeight: 90
       - pause: {}
