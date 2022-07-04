@@ -3,7 +3,7 @@ kind: Rollout
 metadata:
   name: app1-ms4-canary
 spec:
-  replicas: 3
+  replicas: 10
   revisionHistoryLimit: 1
   selector:
     matchLabels:
@@ -30,4 +30,4 @@ spec:
       canaryService: app1-ms4-canary-preview
       steps:
       - setWeight: 10
-      - pause: { duration: 40 }
+      - pause: {}
