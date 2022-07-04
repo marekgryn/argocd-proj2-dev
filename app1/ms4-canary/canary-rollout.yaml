@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app1-ms4-canary
-        image: yeasy/simple-web:latest
+        image: yeasy/simple-web
         imagePullPolicy: Always
         ports:
         - name: http
@@ -28,7 +28,7 @@ spec:
   strategy:
     canary:
       canaryService: app1-ms4-canary-preview
-      stableService: app1-ms4-canary  # required
+      stableService: app1-ms4-canary
       trafficRouting:
         nginx:
           stableIngress: app1-ms4-canary
