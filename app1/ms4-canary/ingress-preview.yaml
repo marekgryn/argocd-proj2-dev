@@ -19,4 +19,4 @@ spec:
             name: app1-ms4-canary-preview
             port:
               number: 80
-    host: k8s-ingressn-ingressn-f56e1aaa50-c3c50fce09f56240.elb.eu-west-2.amazonaws.com
+    host: k8s-ingressn-ingressn-2fc4aa06ce-27daa62d24681377.elb.eu-west-2.amazonaws.com
