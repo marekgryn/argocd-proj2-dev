@@ -28,13 +28,9 @@ spec:
   strategy:
     canary:
       canaryService: app1-ms4-canary-preview
-      stableService: app1-ms4-canary
-      trafficRouting:
-        nginx:
-          stableIngress: app1-ms4-canary
       steps:
 #      - setCanaryScale:
 #          weight: 30
 #          matchTrafficWeight: true
-      - setWeight: 90
+      - setWeight: 30
       - pause: {}
