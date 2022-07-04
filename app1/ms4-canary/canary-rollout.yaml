@@ -28,6 +28,10 @@ spec:
   strategy:
     canary:
       canaryService: app1-ms4-canary-preview
+#      stableService: app1-ms4-canary  # required
+      trafficRouting:
+        nginx:
+          stableIngress: app1-ms4-canary
       steps:
       - setCanaryScale:
           weight: 10
