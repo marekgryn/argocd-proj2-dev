@@ -19,4 +19,5 @@ spec:
             name: app1-ms4-canary
             port:
               number: 80
-    host: k8s-ingressn-ingressn-2fc4aa06ce-27daa62d24681377.elb.eu-west-2.amazonaws.com
+    host: canary-deployment.argo.cdworkstreamsandbox.babylontech.co.uk
+#    host: k8s-ingressn-ingressn-2fc4aa06ce-27daa62d24681377.elb.eu-west-2.amazonaws.com
