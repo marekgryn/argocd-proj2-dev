@@ -18,4 +18,4 @@ spec:
             name: app1-ms4-canary-preview
             port:
               number: 80
-    host: canary-deployment-preview.argo.cdworkstreamsandbox.babylontech.co.uk
+    host: canary-deployment-preview.argo-poc.cdworkstreamsandbox.babylontech.co.uk
