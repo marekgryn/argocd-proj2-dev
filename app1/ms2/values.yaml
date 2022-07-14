@@ -1,5 +1,5 @@
 ---
 demo:
-  replicaCount: 3
+  replicaCount: 4
   image:
     tag: "1.21.6"
